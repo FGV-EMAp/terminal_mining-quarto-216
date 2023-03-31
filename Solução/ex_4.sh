@@ -1,2 +1,2 @@
-#!/bin/bash
-cat ../Dados/machado/contos/macn001.txt | sed 's/ /\n/g' | tr [a-z] [A-Z] > palavras.txt
+#!/usr/bin/bash
+grep -o '\w*' ../Dados/machado/contos/macn001.txt | sort | uniq -c -i | sort > resultado_ex_4
